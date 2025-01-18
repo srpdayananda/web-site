@@ -1,0 +1,237 @@
+
+.firstStage {
+    display: flex;
+    width: 100%;
+}
+
+.leftSideA {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    background-color: white;
+}
+
+.leftSideALeft {
+    width: 75%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainTitle {
+    padding: 0px 2rem;
+}
+
+.titleDescription {
+    padding: 2rem 2rem;
+    font-size: 16px;
+}
+
+.leftSideARight {
+    width: 25%;
+    height: 500px;
+    background-color: white;
+}
+
+.leftSideARightOne {
+    width: 100%;
+    height: 200px;
+    background-color: #fc066df1;
+    border-radius: 100% 0% 0% 0%;
+}
+
+.leftSideARightTwo {
+    width: 100%;
+    height: 200px;
+    background-color: #fc066df1;
+    border-radius: 0% 0% 0% 100%;
+}
+
+.rightSideA {
+    background-color: #6A0DAD;
+    width: 50%;
+    height: 500px;
+    display: flex;
+}
+
+.rightSideALeft {
+    background-color: #6A0DAD;
+    width: 40%;
+    height: 500px;
+}
+
+.rightSideALeftFirstStage {
+    background-color: #6A0DAD;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.rightSideALeftSecondStage {
+    background-color: #6A0DAD;
+    width: 100%;
+    height: 300px;
+}
+
+.rightSideALeftOne {
+    background-color: #fc066df1;
+    width: 50%;
+    height: 200px;
+    border-radius: 0% 0% 100% 0%;
+}
+
+.rightSideALefTwo {
+    background-color: #822EFF;
+    width: 50%;
+    height: 200px;
+    border-radius: 0% 50% 50% 0%;
+}
+
+.rightSideALeftThird {
+    background-color: #518eff;
+    width: 100%;
+    height: 300px;
+    border-radius: 50% 50% 50% 0%;
+}
+
+.rightSideARight {
+    position: relative;
+    background-color: #fdbab9;
+    width: 60%;
+    border-radius: 0% 50% 50% 50%;
+    overflow: hidden;
+}
+
+.secondStage {
+    display: flex;
+    width: 100%;
+}
+
+.leftSideB {
+    width: 50%;
+    height: 350px;
+    display: flex;
+    background-color: white;
+}
+
+.leftSideBLeft {
+    width: 75%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+}
+
+.leftSideBLeftOne {
+    width: 30%;
+    height: 350px;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+}
+
+.leftSideBLeftPartOne {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.leftSideBLeftPartTwo {
+    width: 100%;
+    height: 150px;
+    background-color: #518eff;
+    border-radius: 0% 50% 50% 0%;
+}
+
+.leftSideBLeftPartThird {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+}
+
+.leftSideBLeftTwo {
+    width: 70%;
+    height: 350px;
+    background-color: white;
+}
+
+.leftSideBRight {
+    width: 25%;
+    height: 350px;
+    background-color: white;
+}
+
+.leftSideBRightOne {
+    width: 100%;
+    height: 175px;
+    background-color: #9D00FF;
+    border-radius: 100% 0% 0% 0%;
+}
+
+.leftSideBRightTwo {
+    width: 100%;
+    height: 175px;
+    background-color: #9D00FF;
+    border-radius: 0% 0% 0% 100%;
+}
+
+.rightSideB {
+    background-color: #6A0DAD;
+    width: 50%;
+    height: 350px;
+    display: flex;
+    border-bottom-right-radius: 25px;
+}
+
+.rightSideBLeft {
+    position: relative;
+    width: 40%;
+    height: 350px;
+    background-color: #FFE6E8;
+    border-radius: 50% 50% 50% 0%;
+    overflow: hidden;
+}
+
+.rightSideBCenter {
+    background-color: #6A0DAD;
+    width: 20%;
+    height: 350px;
+}
+
+.rightSideBCenterOne {
+    background-color: #9D00FF;
+    width: 100%;
+    height: 175px;
+    border-radius: 50% 0% 50% 50%;
+}
+
+.rightSideBCenterTwo {
+    background-color: #518eff;
+    width: 100%;
+    height: 175px;
+    border-radius: 50% 50% 0% 0%;
+}
+
+.rightSideBRight {
+    position: relative;
+    width: 40%;
+    height: 350px;
+    background-color: #FFE6E8;
+    border-radius: 50% 50% 50% 0%;
+    overflow: hidden;
+}
+
+.customImage {
+    object-fit: cover;
+  }
+
+.btnTalkToUs {
+    background-color: #9D00FF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #9D00FF;
+    margin-left: 2rem;
+    color: #fff;
+    font-size: 16px;
+}
