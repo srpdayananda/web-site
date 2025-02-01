@@ -15,7 +15,8 @@
     "@mui/material": "^6.4.2",
     "next": "15.0.0",
     "react": "19.0.0-rc-65a56d0e-20241020",
-    "react-dom": "19.0.0-rc-65a56d0e-20241020"
+    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "sass": "^1.83.4"
   },
   "devDependencies": {
     "@types/node": "^20",
