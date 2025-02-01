@@ -1,3 +1,45 @@
+/* Mobile (Small) */
+@media (max-width: 576px) {
+    .middleIconsSections {
+        display: none !important;
+    }
+}
+
+/* Mobile (Large) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .middleIconsSections {
+        display: none !important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .middleIconsMobileSection {
+        display: none !important;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .middleIconsMobileSection {
+        display: none !important;
+    }
+}
+
+/* Monitor */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .middleIconsMobileSection {
+        display: none !important;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1920px) {
+    .middleIconsMobileSection {
+        display: none !important;
+    }
+}
+
 .container {
     min-height: 100vh;
     background-color: #000;
@@ -41,6 +83,26 @@
 .middleIconsSections {
     display: flex;
     justify-content: space-between;
+}
+
+.middleIconsMobileSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.iconsMobileContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.iconMobile {
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
 
 .mt1 {

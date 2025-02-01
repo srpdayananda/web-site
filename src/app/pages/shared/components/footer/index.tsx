@@ -65,6 +65,60 @@ const Footer = () => {
             <div>+94771642571</div>
           </div>
         </div>
+        <div className={style.middleIconsMobileSection}>
+          <div className={style.iconsMobileContent}>
+            <div className={style.iconMobile}>
+              <div>
+                <Image
+                  src="/png/footer-location.png"
+                  alt="human-one"
+                  width={40}
+                  height={40}
+                />
+                <div className={style.mt1}>Location</div>
+                <div>Sri lanka</div>
+              </div>
+            </div>
+            <div className={style.iconMobile}>
+              <div>
+                <Image
+                  src="/png/footer-email.png"
+                  alt="human-one"
+                  width={40}
+                  height={40}
+                />
+                <div className={style.mt1}>Email</div>
+                <div>srpdayananda77@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div className={style.iconsMobileContent}>
+            <div className={style.iconMobile}>
+              <div>
+                <Image
+                  src="/png/footer-skype.png"
+                  alt="human-one"
+                  width={40}
+                  height={40}
+                />
+                <div className={style.mt1}>Skype</div>
+                <div>Home</div>
+              </div>
+            </div>
+            <div className={style.iconMobile}>
+              <div>
+                <Image
+                  src="/png/footer-whatsapp.png"
+                  alt="human-one"
+                  width={40}
+                  height={40}
+                />
+                <div className={style.mt1}>Whatsapp</div>
+                <div>+94771642571</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className={style.bottomSection}>
         <div className={style.bottomContent}>

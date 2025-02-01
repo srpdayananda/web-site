@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import TopBar from "./pages/shared/components/top-bar";
 import Footer from "./pages/shared/components/footer";
+import MobileSidePanel from "./pages/shared/components/mobile-side-panel";
+import React from "react";
+import { SidebarProvider } from "./context/SidebarContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,14 +31,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}
-       style={{
-        background: '#ecf0f1',
-        minHeight: '100vh'
-       }}>
-        <TopBar />
-        {children}
-        <Footer />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable}`}
+        style={{
+          background: "#ecf0f1",
+          minHeight: "100vh",
+        }}
+      >
+        <SidebarProvider>
+          <TopBar />
+          <MobileSidePanel />
+          {children}
+          <Footer />
+        </SidebarProvider>
       </body>
     </html>
   );
