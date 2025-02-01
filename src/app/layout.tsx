@@ -29,8 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}
-       style={{ 
-        padding: '2rem',
+       style={{
         background: '#ecf0f1',
         minHeight: '100vh'
        }}>

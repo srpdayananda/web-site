@@ -2,33 +2,49 @@
     display: flex;
     width: 100%;
     padding: 0;
-    height: 100px;
+    height: 75px;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled {
+    background-color: #ecf0f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .leftSide {
-    background-color: white;
     width: 50%;
     display: flex;
     align-items: center;
-    padding: 0 2rem;
-    border-top-left-radius: 25px;
 }
 
 .rightSide {
-    background-color: #6A0DAD;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 2rem;
-    border-top-right-radius: 25px;
 }
 
-.navLinks {
+.navLinksLeft {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.navLinksRight {
     list-style: none;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 2rem;
+    align-items: center;
 }
 
 .link {
@@ -37,6 +53,43 @@
     color: #101828;
 }
 
+.link:hover {
+    color: #fc066df1;
+    cursor: pointer;
+}
+
+.callNavigationLink {
+    background-color: white;
+    padding: 3px 5px;
+    color: black;
+    cursor: pointer;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.callNavigationLink:hover {
+    background-color: #fc066df1;
+    color: white;
+}
+
 .linkRight {
     color: white;
+}
+
+.btnTalkToUs {
+    background-color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 2rem;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btnTalkToUs:hover {
+    background-color: #fc066df1;
+    border: 1px solid #fc066df1;
+    color: #fff;
 }

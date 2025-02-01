@@ -1,28 +1,77 @@
-import Link from "next/link";
+"use client";
+
+import React from "react";
 import styles from "./index.module.css";
+import CallIcon from "@mui/icons-material/Call";
 
 const TopBar = () => {
-    return (
-      <nav className={styles.navbar}>
-        <div className={styles.leftSide}>
-          <ul className={styles.navLinks}>
-            <li>
-              <Link href="" className={styles.link}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="" className={styles.link}>
-                About Us
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.rightSide}>
-          <ul className={styles.navLinks}></ul>
-        </div>
-      </nav>
-    );
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  const navigationHandler = (navigation: string) => {
+    const section = document.getElementById(navigation);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
-  
-  export default TopBar;
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
+      <div className={styles.leftSide}>
+        <ul className={styles.navLinksLeft}>
+          <li className={styles.link} onClick={() => navigationHandler("home")}>
+            Home
+          </li>
+        </ul>
+      </div>
+      <div className={styles.rightSide}>
+        <ul className={styles.navLinksRight}>
+          <li
+            className={styles.callNavigationLink}
+            onClick={() => navigationHandler("our-office")}
+          >
+            <CallIcon />
+          </li>
+          <li
+            className={styles.link}
+            onClick={() => navigationHandler("our-service")}
+          >
+            Our Service
+          </li>
+          <li
+            className={styles.link}
+            onClick={() => navigationHandler("about-us")}
+          >
+            About Us
+          </li>
+          <li
+            className={styles.link}
+            onClick={() => navigationHandler("portfolio")}
+          >
+            Portfolio
+          </li>
+          <li
+            className={styles.btnTalkToUs}
+            onClick={() => navigationHandler("talk-to-us")}
+          >
+            Talk to Us
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default TopBar;

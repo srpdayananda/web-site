@@ -1,0 +1,72 @@
+.container {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.logoImage {
+    object-fit: cover;
+}
+
+.companyName {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.componyDescription {
+    font-weight: 700;
+}
+
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.middleIconsSections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.bottomSection {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomContent {
+    width: 80%;
+}
+
+.bottomLine {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.bottomSectionLast {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}

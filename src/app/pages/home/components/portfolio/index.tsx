@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import style from "./index.module.css";
 
 const Portfolio = () => {
   return (
-    <div>
+    <div id="portfolio" className={style.container}>
       Portfolio
     </div>
-  )
-}
+  );
+};
 
 export default Portfolio;

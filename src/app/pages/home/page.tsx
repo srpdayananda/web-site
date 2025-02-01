@@ -10,14 +10,26 @@ import OurOffice from "./components/our-office";
 
 const Home: FC = () => {
   return (
-    <>
-      <MainContent />
-      <OurServices />
-      <AboutUs />
-      <Portfolio />
-      <TalkToUs />
-      <OurOffice />
-    </>
+    <div>
+      <div id="home">
+        <MainContent />
+      </div>
+      <div id="our-services">
+        <OurServices />
+      </div>
+      <div id="about-us">
+        <AboutUs />
+      </div>
+      <div id="portfolio">
+        <Portfolio />
+      </div>
+      <div id="talk-to-us">
+        <TalkToUs />
+      </div>
+      <div id="our-office">
+        <OurOffice />
+      </div>
+    </div>
   );
 };
 
