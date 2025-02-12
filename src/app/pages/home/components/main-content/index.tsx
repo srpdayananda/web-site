@@ -1,5 +1,4 @@
 "use client";
-
 import styles from "./index.module.scss";
 import Image from "next/image";
 import React from "react";
@@ -16,22 +15,43 @@ const MainContent = () => {
     <div className={styles.container}>
       <div className={styles.firstStage}>
         <div className={styles.leftSideA}>
-          <div className={styles.leftSideAFirst}></div>
+          <div className={styles.leftSideAFirst}>
+            <div className={styles.logoSection}>
+              <div className={styles.logo}>
+                <Image
+                  src="/png/home-top-bar.png"
+                  alt="logo"
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <div>
+                <div className={styles.logoName}>Home</div>
+                <div className={styles.logoText}>ENGINEERED FOR EXCELLENCE</div>
+              </div>
+            </div>
+          </div>
           <div className={styles.leftSideASecond}>
             <div className={styles.leftSideALeft}>
               <div>
-                <h1 className={styles.mainTitle}>
+                <div className={styles.mainTitle}>
                   <span>Ready to take your business</span>
                   <br />
                   <span>to the next level?</span>
-                </h1>
-                <p className={styles.titleDescription}>
+                </div>
+                <div className={styles.titleDescription}>
                   Experience the power of our high-quality web and mobile
                   application design and development services. Let us transform
                   your ideas into reality and propel your business towards
                   unprecedented success. Contact us today and embark on a
                   journey of growth and innovation.
-                </p>
+                </div>
+                <button
+                  onClick={() => navigationHandler("talk-to-us")}
+                  className={styles.btnTalkToUs}
+                >
+                  Talk to Us
+                </button>
               </div>
             </div>
             <div className={styles.leftSideARight}>
@@ -68,14 +88,7 @@ const MainContent = () => {
         <div className={styles.leftSideB}>
           <div className={styles.leftSideBLeft}>
             <div className={styles.leftSideBLeftOne}>
-              <div className={styles.leftSideBLeftPartOne}>
-                <button
-                  onClick={() => navigationHandler("talk-to-us")}
-                  className={styles.btnTalkToUs}
-                >
-                  Talk to Us
-                </button>
-              </div>
+              <div className={styles.leftSideBLeftPartOne}></div>
               <div className={styles.leftSideBLeftPartTwo}></div>
               <div className={styles.leftSideBLeftPartThird}></div>
             </div>

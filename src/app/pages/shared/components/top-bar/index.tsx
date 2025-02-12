@@ -38,12 +38,14 @@ const TopBar = () => {
           }`}
         >
           <div>
-            <Image
-              src="/png/home-top-bar.png"
-              alt="logo"
-              width={40}
-              height={40}
-            />
+            {isScrolled && (
+              <Image
+                src="/png/home-top-bar.png"
+                alt="logo"
+                width={40}
+                height={40}
+              />
+            )}
           </div>
           <div>
             {showSidePanel ? (
@@ -78,7 +80,25 @@ const TopBar = () => {
                 className={styles.link}
                 onClick={() => navigationHandler("home")}
               >
-                Home
+                {" "}
+                {isScrolled && (
+                  <div className={styles.logoSection}>
+                    <div className={styles.logo}>
+                      <Image
+                        src="/png/home-top-bar.png"
+                        alt="logo"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                    <div>
+                      <div className={styles.logoName}>Home</div>
+                      <div className={styles.logoText}>
+                        ENGINEERED FOR EXCELLENCE
+                      </div>
+                    </div>
+                  </div>
+                )}
               </li>
             </ul>
           </div>
