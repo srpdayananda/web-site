@@ -3,7 +3,7 @@ import React from "react";
 import style from "./index.module.scss";
 import Image from "next/image";
 import Industries from "./industries";
-import MobileAppDeployment from "./mobile-app-development";
+import DevService from "./dev-service";
 
 const AboutUs = () => {
   const [showMoreDetails, setShowMoreDetails] = React.useState(true);
@@ -173,7 +173,7 @@ const AboutUs = () => {
         <Industries />
       </div>
       <div>
-        <MobileAppDeployment />
+        <DevService />
       </div>
     </div>
   );
